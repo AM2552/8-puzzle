@@ -2,7 +2,7 @@
 
 # 8-puzzle
 
-2.  Software-Architecture-Diagram
+3.  Short descriptions of modules and interfaces
 
     Here, the flow of the project is represented:
 
