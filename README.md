@@ -2,7 +2,7 @@
 
 # 8-puzzle
 
-3.  Software-Architecture-Diagram
+2.  Software-Architecture-Diagram
 
     Here, the flow of the project is represented:
 
