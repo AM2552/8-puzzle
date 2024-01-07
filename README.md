@@ -10,6 +10,6 @@
 
 2. Software architecture diagram:
 
-    ![Image](Software_architecture_diagram.drawio)
+    ![Image](Software_architecture_diagram.drawio.png)
 
    
