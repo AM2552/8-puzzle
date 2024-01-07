@@ -1,5 +1,5 @@
 """
-This module implements both heuristic functions used in the A*-Search: Hamming and Manhattan Distance.
+This module implements both heuristic functions used in the A*-Search: Hamming Distance and Manhattan Distance.
 """
 
 

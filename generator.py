@@ -17,26 +17,30 @@ def puzzle_generator():
     return puzzle
 
 def count_inversions(array):
-    """Counts the number of inversions in the generated puzzle."""
+    """Counts the number of inversions in the generated puzzle, excluding the 0."""
     inversion_count = 0
-    for a in range(len(array)):
-        for b in range(a + 1, len(array)):
-            if array[a] > array[b]:
+    state = array[:]
+    state.remove(0)
+
+    for a in range(len(state)):
+        for b in range(a + 1, len(state)):
+            if state[a] > state[b]:
                 inversion_count += 1
     return inversion_count
 
 
 def generate_solvable_puzzle():
-    """Generates puzzle instances until a solvable one is found."""
+    """Generates puzzle instances until a solvable one is found (inversion count is even)."""
     is_solvable = False
     while not is_solvable:
         instance = puzzle_generator()
-        # for our 3x3 grid the inversion count must be even for it to be solvable
+        # for our 3x3 puzzle the inversion count must be even for it to be solvable
         if count_inversions(instance) % 2 == 0:
             is_solvable = True
     return instance
 
 
 if __name__ == "__main__":
-    puzzle = generate_solvable_puzzle()
-    print(puzzle)
+    test_puzzle = generate_solvable_puzzle()
+    print(test_puzzle)
+
